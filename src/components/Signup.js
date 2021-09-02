@@ -2,7 +2,6 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Alert, FormGroup, Button, Input, Form } from 'reactstrap';
 import { auth } from '../config/firebase';
 import './Signup.css';
-import firebase from 'firebase';
 
 const Signup = () => {
   const emailRef = useRef(null);
@@ -44,7 +43,7 @@ const Signup = () => {
     window.localStorage.clear();
   }, []);
 
-  const onSignUpHandler = async (e) => {
+  const onJoinHandler = async (e) => {
     e.preventDefault();
     setError('');
 
@@ -77,21 +76,6 @@ const Signup = () => {
         window.localStorage.setItem('roleForSignIn', roleRef.current.value);
       })
       .catch((err) => setError(error.message));
-
-    //////HERERERERE//////////////////////
-    // await auth
-    //   .createUserWithEmailAndPassword(
-    //     emailRef.current.value,
-    //     phoneRef.current.value
-    //   )
-    //   .then((res) => {
-    //     console.log(res, 'Registered');
-    //   })
-    //   .catch((error) => {
-    //     setError(error.message);
-    //     console.log(error, error.message);
-    //   });
-    //////HERERERERE//////////////////////
   };
 
   return (
@@ -125,14 +109,14 @@ const Signup = () => {
 
           {error.length ? (
             <FormGroup>
-              <Alert color="danger">
+              <Alert color="dark">
                 <strong>Error!</strong> {error}.
               </Alert>
             </FormGroup>
           ) : null}
 
           <FormGroup className="form-item">
-            <Button block className="form-btn" onClick={onSignUpHandler}>
+            <Button block className="form-btn" onClick={onJoinHandler}>
               Join the wait list
             </Button>
           </FormGroup>
