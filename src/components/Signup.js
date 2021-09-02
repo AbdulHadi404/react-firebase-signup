@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Alert, FormGroup, Button, Input, Form } from 'reactstrap';
 import { auth } from '../config/firebase';
 import './Signup.css';
+import firebase from 'firebase';
 
 const Signup = () => {
   const emailRef = useRef(null);
@@ -27,18 +28,9 @@ const Signup = () => {
       console.log(auth.currentUser);
 
       await auth.currentUser
-        .updatePhoneNumber({ phoneCredential: phoneNumberMem })
-        .then((res) => {
-          console.log(res, 'Phone Name Added');
-        })
-        .catch((error) => {
-          setError(error.message);
-          console.log(error);
-        });
-
-      await auth.currentUser
         .updateProfile({
           displayName: `${displayNameMem}`,
+          photoURL: `https://randomuser.me/api/portraits/men/1.jpg`,
         })
 
         .then((res) => {
