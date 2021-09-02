@@ -1,18 +1,100 @@
-.signin{
-    max-width: 300px;
-    margin-left: auto;
-    margin-right: auto;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.form-container {
+  margin-top: 20vh;
+  margin-left: 20vh;
+  margin-right: 10vh;
+  max-width: 310px !important;
+}
+.flex-item-left {
+  flex: 3;
+  height: 100vh;
+  background-color: white;
 }
 
-.signin>form{
-    display: grid;
+.flex-item-right {
+  flex: 4;
+  height: 100vh;
+  background-color: #6c3190;
+  color: white;
+}
+
+.form-btn {
+  background-color: #6c3190 !important;
+  border-radius: 8px !important;
+  border: none !important;
+  font-weight: bold !important;
+  width: 180px !important;
+  height: 45px !important;
+}
+
+.form-btn:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.33);
+}
+
+input:hover {
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-item {
+  text-align: start;
+  color: #6c3190;
+  font-weight: bold;
+}
+
+Input {
+  opacity: 0.4;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  border-radius: 8px !important;
+  border-color: transparent !important;
+  box-shadow: 0px 0px 15px 2px rgb(236, 233, 233);
+}
+
+/* ==================Right====================== */
+
+.content-container {
+  margin-top: 30vh;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.avatar {
+  border: solid 2px #ffffff;
+  border-width: 2px;
+  position: relative !important;
+}
+
+.text-block {
+  font-weight: bold;
+  text-align: left;
+  max-width: 420px;
+}
+
+.text-block-img {
+  display: inline-block;
+  font-weight: bold;
+  font-size: small;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-item-right,
+  .flex-item-left {
+    flex: 100%;
     flex-direction: column;
-}
-.signin>form>input{
-    margin-bottom: 5px
-    ;
-}
-
-.signin__link:hover{
-    text-decoration: underline;
+  }
 }
