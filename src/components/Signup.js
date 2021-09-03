@@ -88,6 +88,7 @@ const Signup = () => {
               innerRef={displayNameRef}
               type="text"
               placeholder="Full name"
+              required
             />
           </FormGroup>
 
@@ -97,14 +98,25 @@ const Signup = () => {
               type="text"
               placeholder="You are a: Dev, 
             Freelancer, Businessman"
+              required
             />
           </FormGroup>
 
           <FormGroup>
-            <Input innerRef={phoneRef} type="text" placeholder="Phone" />
+            <Input
+              innerRef={phoneRef}
+              type="text"
+              placeholder="Phone"
+              required
+            />
           </FormGroup>
           <FormGroup>
-            <Input innerRef={emailRef} type="email" placeholder="Email" />
+            <Input
+              innerRef={emailRef}
+              type="email"
+              placeholder="Email"
+              required
+            />
           </FormGroup>
 
           {error.length ? (
@@ -116,7 +128,7 @@ const Signup = () => {
           ) : null}
 
           <FormGroup className="form-item">
-            <Button block className="form-btn" onClick={onJoinHandler}>
+            <Button block className="form-btn" onSubmit={onJoinHandler}>
               Join the wait list
             </Button>
           </FormGroup>

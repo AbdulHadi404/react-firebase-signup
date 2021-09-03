@@ -135,7 +135,7 @@ Input {
 @media (max-width: 329px) {
   .flex-item-right,
   .flex-item-left {
-    height: 100vh;
+    height: auto;
   }
 }
 @media (max-height: 400px) {
@@ -165,11 +165,8 @@ Input {
   .flex-item-left {
     height: 100vh;
   }
-  .content-container {
-    margin: auto;
-  }
   .form-container {
-    margin: auto;
+    margin-top: 5vh;
   }
 }
 @media screen and (max-width: 680px) and (max-height: 360px) {
