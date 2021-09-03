@@ -12,6 +12,7 @@
 .flex-item-left {
   flex: 3;
   height: 100vh;
+  min-height: 550px !important;
   background-color: white;
 }
 
@@ -107,6 +108,7 @@ Input {
   }
   .flex-item-left {
     height: 80vh !important;
+    min-height: 550px !important;
   }
 }
 @media (max-height: 517px) and (max-width: 457px) {
@@ -215,5 +217,6 @@ Input {
   }
   .flex-item-left {
     margin-bottom: 30vh;
+    min-height: 550px !important;
   }
 }

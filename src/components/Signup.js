@@ -128,7 +128,11 @@ const Signup = () => {
           ) : null}
 
           <FormGroup className="form-item">
-            <Button block className="form-btn" onSubmit={onJoinHandler}>
+            <Button
+              block
+              className="form-btn"
+              onClick={(e) => onJoinHandler(e)}
+            >
               Join the wait list
             </Button>
           </FormGroup>
