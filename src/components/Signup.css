@@ -207,3 +207,13 @@ Input {
     margin-right: 10vh;
   }
 }
+
+/* ---------------------------------------- */
+@media only screen and (min-width: 824px) and (max-width: 824px) and (max-height: 415px) and (min-height: 415px) and (orientation: landscape) {
+  .flex-container {
+    flex-direction: column !important;
+  }
+  .flex-item-left {
+    margin-bottom: 30vh;
+  }
+}
