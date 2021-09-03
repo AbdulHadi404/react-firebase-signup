@@ -33,7 +33,7 @@ const Signup = () => {
         })
 
         .then((res) => {
-          console.log(res, 'User Name Added');
+          console.log(res, 'User Info Updated');
         })
         .catch((error) => {
           setError(error.message);
