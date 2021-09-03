@@ -1,6 +1,6 @@
 # react-firebase-signup
 
-Responsive Signup page with Firebase Passwordless Signin with Reacstrap/Bootstrap.
+Responsive Signup page with Firebase Passwordless Signin and Reacstrap/Bootstrap.
 - Email link redirect will check user info from local storage to signin and updateProfile 
 
 ## Preview
