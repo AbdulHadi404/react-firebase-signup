@@ -1,5 +1,5 @@
 # react-firebase-signup
-
+[![React.js CI](https://github.com/AbdulHadi404/react-firebase-signup/actions/workflows/react.js.yml/badge.svg)](https://github.com/AbdulHadi404/react-firebase-signup/actions/workflows/react.js.yml)
 Responsive Signup page with Firebase Passwordless Signin and Reacstrap/Bootstrap.
 - Email link redirect will check user info from local storage to signin and updateProfile 
 - [Live Preview](https://signupfirebase-47603.web.app/)
